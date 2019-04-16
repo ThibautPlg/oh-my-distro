@@ -7,3 +7,6 @@ cp monokai.vim ~/.vim/colors/
 cp .vimrc ~/
 
 grep -qxF 'source ~/.bash_tpo' ~/.bash_tpo || echo 'source ~/.bash_tpo' >> ~/.bash_tpo
+
+#Fonts
+sh ./getFont.sh

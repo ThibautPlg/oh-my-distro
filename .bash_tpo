@@ -1,0 +1,24 @@
+#echo "General aliases..."
+
+grephere()
+{
+    grep -rnw "./" -e "$1 --color=auto"
+}
+alias ll="ls -ll --color=auto"
+alias apt-get='sudo apt-get'
+alias zypper='sudo zypper'
+alias c='clear'
+alias mkdir='mkdir -pv'
+alias path='echo -e ${PATH//:/\\n}'
+alias now='date +"%T"'
+alias nowtime=now
+alias nowdate='date +"%d-%m-%Y"'
+alias su='sudo -i'
+alias gir='git'
+alias gut='git'
+
+#echo "Setting up Git aliases..."
+git config --global alias.st status
+
+#TERMINAL Coloration
+# export PS1="\[\033[38;5;71m\]\u\[$(tput sgr0)\]\[\033[38;5;82m\]@\[$(tput sgr0)\]\[\033[38;5;76m\]\h\[$(tput sgr0)\]\[\033[38;5;15m\]:\[$(tput sgr0)\]\[\033[38;5;228m\]\w\[$(tput sgr0)\]\[\033[38;5;11m\]>\[$(tput sgr0)\]"
