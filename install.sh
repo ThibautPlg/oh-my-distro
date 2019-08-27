@@ -10,3 +10,7 @@ grep -qxF 'source ~/.bash_tpo' ~/.bash_tpo || echo 'source ~/.bash_tpo' >> ~/.ba
 
 #Fonts
 sh ./getFont.sh
+
+#Get Yakuake Theme
+cp -r ./sodadark-thintitlebar /usr/share/yakuake/skins/
+# @todo : Write "Skin=sodadark-thintitlebar" in .config/yakuakerc
