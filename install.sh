@@ -9,7 +9,9 @@ cp .vimrc ~/
 grep -qxF 'source ~/.bash_tpo' ~/.bash_tpo || echo 'source ~/.bash_tpo' >> ~/.bash_tpo
 
 #Fonts
-sh ./getFont.sh
+mkdir -p ~/.local/share/fonts
+cp ./LigaDroidSansMono.ttf ~/.local/share/fonts/LigaDroidSansMono.ttf
+fc-cache -vf
 
 #Get Yakuake Theme
 cp -r ./sodadark-thintitlebar /usr/share/yakuake/skins/
