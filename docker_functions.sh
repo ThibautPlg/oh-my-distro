@@ -76,5 +76,7 @@ dockip() {
     done;
 }
 
-###### general purpose ######
-alias ll="ls -ll"
+dockclean() {
+	##### Auto removes "exited" docker containers #####
+        docker rm $(docker ps -a -f status=exited -q)
+}
