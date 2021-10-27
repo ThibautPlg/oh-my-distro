@@ -23,7 +23,7 @@ dexec(){
 	###############################
 	if [ -z "$2" ]
 	then
-		docker exec -u -it $1 bash
+		docker exec -it $1 bash
 	else
 		docker exec -u $2 -it $1 bash
 	fi
